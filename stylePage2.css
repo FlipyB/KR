@@ -1,0 +1,266 @@
+/* Стили для фона страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('WeiEnergy (1).png'); /* Путь к изображению */
+    background-size: cover; /* Масштабируем изображение, чтобы покрыть весь экран */
+    background-position: top center; /* Центрируем по горизонтали, прижимаем к верху */
+    background-repeat: no-repeat; /* Убираем повторение */
+    background-color: #f4f4f4; /* Цвет фона на случай, если изображение не загрузится */
+    padding: 20px;
+    margin: 0; /* Убираем отступы по умолчанию */
+    overflow: hidden; /* Убираем скролл */
+}
+
+/* Контейнер для кнопок */
+.button-container {
+    display: flex;
+    justify-content: flex-start; /* Центрируем кнопки по горизонтали */
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 10% /* Отступ сверху для равномерного распределения */
+}
+
+/* Стили для кнопки обновления цены */
+#callPrice {
+    position: absolute;
+    top: 30%; /* Расстояние от верхнего края родительского контейнера */
+    left: 50px; /* Расстояние от левого края родительского контейнера */
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #44280d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s ease;
+}
+
+#callPrice:hover {
+    background-color: #a37512; /* Цвет при наведении */
+}
+
+#callPrice:active {
+    transform: scale(0.95); /* Небольшое уменьшение при нажатии */
+}
+
+#Price {
+    position: absolute; /* Абсолютное позиционирование */
+    left: 220px; /* Расстояние от левого края родительского элемента (если кнопка имеет ширину 120px) */
+    top: 32.3%; /* Центрирование по вертикали */
+    transform: translateY(-50%); /* Чтобы текст был точно по центру */
+    font-size: 24px;
+    font-weight: bold; 
+    padding: 7px 10px;
+    color:white;
+    background-color: #44280d;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+
+
+#calculate {
+    position: absolute;
+    top: 40%; /* Расстояние от верхнего края родительского контейнера */
+    left: 50px; /* Расстояние от левого края родительского контейнера */
+    padding: 12px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #44280d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s ease;
+}
+
+#calculate:hover {
+    background-color: #a37512; /* Цвет при наведении */
+}
+
+#calculate:active {
+    transform: scale(0.95); /* Небольшое уменьшение при нажатии */
+}
+
+#howmuch {
+    position: absolute; /* Абсолютное позиционирование */
+    left: 450px; /* Расстояние от левого края inputField + ширина поля ввода + отступ */
+    top: 42%; /* Вертикальное выравнивание с inputField */
+    transform: translateY(-50%); /* Чтобы текст был точно по центру */
+    font-size: 24px;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color:white;
+    background-color: #44280d; /* Цвет текста */
+}
+
+#inputField {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 40%; /* Расстояние от верхнего края родительского контейнера */
+    left: 220px; /* Расстояние от левого края родительского контейнера */
+    padding: 8px;
+    font-size: 20px;
+    color: white;
+    border: 1px solid #44280d; /* Граница поля ввода */
+    border-radius: 5px;
+    background-color: #44280d; /* Белый фон */
+    width: 200px; /* Устанавливаем ширину для поля ввода */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#payForEnergy {
+    position: absolute;
+    top: 50%; /* Расстояние от верхнего края родительского контейнера */
+    left: 45%; /* Расстояние от левого края родительского контейнера */
+    padding: 12px 20px;
+    width:300px;
+    height: 169px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #44280d;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s ease;
+}
+
+#payForEnergy:hover {
+    background-color: #a37512; /* Цвет при наведении */
+}
+
+#payForEnergy:active {
+    transform: scale(0.95); /* Небольшое уменьшение при нажатии */
+}
+
+
+
+
+#send {
+    position: absolute;
+    top: 50%; /* Расстояние от верхнего края родительского контейнера */
+    left: 50px; /* Расстояние от левого края родительского контейнера */
+    padding: 12px 20px;
+    width:160px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #44280d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s ease;
+}
+
+#send:hover {
+    background-color: #a37512; /* Цвет при наведении */
+}
+
+#send:active {
+    transform: scale(0.95); /* Небольшое уменьшение при нажатии */
+}
+
+
+
+
+#debts {
+    position: absolute;
+    top: 30%; /* Расстояние от верхнего края родительского контейнера */
+    left: 35%; /* Расстояние от левого края родительского контейнера */
+    padding: 12px 20px;
+    width:160px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #44280d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s ease;
+}
+
+#debts:hover {
+    background-color: #a37512; /* Цвет при наведении */
+}
+
+#debts:active {
+    transform: scale(0.95); /* Небольшое уменьшение при нажатии */
+}
+#debtsTx {
+    position: absolute; /* Абсолютное позиционирование */
+    left: 44%; /* Расстояние от левого края родительского элемента (если кнопка имеет ширину 120px) */
+    top: 33.2%; /* Центрирование по вертикали */
+    transform: translateY(-50%); /* Чтобы текст был точно по центру */
+    padding: 18px 20px;
+    font-size: 22px;
+    font-weight: bold;  
+    width: fit-content;
+    
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #44280d;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* Стили для кнопки подключения кошелька */
+#connectButton {
+    position: absolute;
+    bottom: 20px; 
+    left: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; /* Круглая форма */
+    border: none;
+    color: rgb(3, 3, 3);
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+   
+}
+/* Цвет кнопки при подключении кошелька (зеленый) */
+.connected {
+    background-color: green;
+}
+
+/* Цвет кнопки при отсутствии подключения кошелька (красный) */
+.disconnected {
+    background-color: red;
+}

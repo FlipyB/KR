@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('WeiEnergy (1).png'); /* Путь к изображению */
+    background-size: cover; /* Масштабируем изображение, чтобы покрыть весь экран */
+    background-position: top center; /* Центрируем по горизонтали, прижимаем к верху */
+    background-repeat: no-repeat; /* Убираем повторение */
+    background-color: #f4f4f4; /* Цвет фона на случай, если изображение не загрузится */
+    padding: 20px;
+    margin: 0; /* Убираем отступы по умолчанию */
+    overflow: hidden; /* Убираем скролл */
+}
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Задаем высоту на всю страницу для центрирования */
+    padding: 20px;
+}
+
+#connectButton img {
+    width: 70%; /* Ширина кнопки */
+    height: auto; /* Пропорциональная высота */
+    display: block;
+    cursor: pointer;
+    transition: transform 0.1s ease; /* Плавный переход для анимации */
+}
+
+#connectButton img:hover {
+    transform: scale(0.9); /* Уменьшение кнопки на 10% при наведении */
+}
+
+
+#callPrice {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #44280d; /* Цвет фона кнопки */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s ease;
+}
+
+
+#callPrice:hover {
+    background-color: #a37512; /* Цвет при наведении */
+}
+
+#callPrice:active {
+    transform: scale(0.95); /* Небольшое уменьшение при нажатии */
+}

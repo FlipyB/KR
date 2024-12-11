@@ -1,0 +1,6 @@
+<div class="button-container">
+        <button id="callPrice">
+            Обновить цену
+        </button>
+        <div id="Price"></div>
+    </div>

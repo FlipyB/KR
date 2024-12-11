@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('WeiEnergy (1).png'); /* Путь к изображению */
+    background-size: cover; /* Масштабируем изображение, чтобы покрыть весь экран */
+    background-position: top center; /* Центрируем по горизонтали, прижимаем к верху */
+    background-repeat: no-repeat; /* Убираем повторение */
+    background-color: #f4f4f4; /* Цвет фона на случай, если изображение не загрузится */
+    padding: 20px;
+    margin: 0; /* Убираем отступы по умолчанию */
+    overflow: hidden; /* Убираем скролл */
+}
+
+/* Контейнер для кнопок */
+.button-container {
+    display: flex;
+    justify-content: flex-start; /* Центрируем кнопки по горизонтали */
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 10% /* Отступ сверху для равномерного распределения */
+}
+#connectButton {
+    position: absolute;
+    bottom: 20px; 
+    left: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; /* Круглая форма */
+    border: none;
+    color: rgb(3, 3, 3);
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+   
+}
+/* Цвет кнопки при подключении кошелька (зеленый) */
+.connected {
+    background-color: green;
+}
+
+/* Цвет кнопки при отсутствии подключения кошелька (красный) */
+.disconnected {
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+#balance {
+    position: absolute;
+    top: 30%; /* Расстояние от верхнего края родительского контейнера */
+    left: 50px; /* Расстояние от левого края родительского контейнера */
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #44280d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s ease;
+}
+
+#balance:hover {
+    background-color: #a37512; /* Цвет при наведении */
+}
+
+#balance:active {
+    transform: scale(0.95); /* Небольшое уменьшение при нажатии */
+}
+
+#balanceTxt {
+    position: absolute; /* Абсолютное позиционирование */
+    left: 300px; /* Расстояние от левого края родительского элемента (если кнопка имеет ширину 120px) */
+    top: 32.3%; /* Центрирование по вертикали */
+    transform: translateY(-50%); /* Чтобы текст был точно по центру */
+    font-size: 24px;
+    font-weight: bold; 
+    padding: 7px 10px;
+    color:white;
+    background-color: #44280d;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+#withdraw {
+    position: absolute;
+    top: 40%; /* Расстояние от верхнего края родительского контейнера */
+    left: 50px; /* Расстояние от левого края родительского контейнера */
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #44280d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s ease;
+}
+
+#withdraw:hover {
+    background-color: #a37512; /* Цвет при наведении */
+}
+
+#withdraw:active {
+    transform: scale(0.95); /* Небольшое уменьшение при нажатии */
+}
+
+
+
+
+
+
+
+
+#changePrice {
+    position: absolute;
+    top: 50%; /* Расстояние от верхнего края родительского контейнера */
+    left: 50px; /* Расстояние от левого края родительского контейнера */
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #44280d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s ease;
+}
+
+#changePrice:hover {
+    background-color: #a37512; /* Цвет при наведении */
+}
+
+#changePrice:active {
+    transform: scale(0.95); /* Небольшое уменьшение при нажатии */
+}
+
+
+#inputField {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 50%; /* Расстояние от верхнего края родительского контейнера */
+    left: 220px; /* Расстояние от левого края родительского контейнера */
+    padding: 8px;
+    font-size: 20px;
+    color: white;
+    border: 1px solid #44280d; /* Граница поля ввода */
+    border-radius: 5px;
+    background-color: #44280d; 
+    width: 200px; /* Устанавливаем ширину для поля ввода */
+}
+
+table {
+    position: absolute;
+    left:35%;
+    top:30%;
+    width: 60%; /* Таблица чуть левее центра */
+    border-collapse: collapse;
+    background-color: #44280d; /* Фон таблицы */
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    color: white; /* Цвет текста */
+    border: 1px solid black; /* Черные границы */
+}
+
+th {
+    background-color: #3b1e0d; /* Тёмный фон для заголовков */
+}

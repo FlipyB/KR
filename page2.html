@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.6.0/dist/ethers.umd.min.js"></script>
+    <script src="script.js" defer></script><!-- Подключаем JavaScript-файл -->
+    <link rel="stylesheet" href="stylePage2.css"> <!-- Подключаем CSS-файл -->
+</head>
+<body>
+    
+    <div class="button-container">
+        <button id="connectButton">Wallet</button>
+    </div>
+        <script>
+            // Функция проверки подключения кошелька
+            async function checkWalletConnection() {
+                if (typeof window.ethereum === 'undefined') {
+                    // Если MetaMask или Ethereum провайдер не установлен
+                    return false;
+                }
+    
+                // Проверка наличия подключенных аккаунтов
+                const accounts = await ethereum.request({ method: 'eth_accounts' });
+                return accounts.length > 0;
+            }
+    
+            // Изменение цвета кнопки в зависимости от подключения кошелька
+            async function updateButtonColor() {
+                const isConnected = await checkWalletConnection();
+                const button = document.getElementById('connectButton');
+    
+                // Применяем соответствующий класс в зависимости от состояния подключения
+                if (isConnected) {
+                    button.classList.remove('disconnected');
+                    button.classList.add('connected');
+                    button.innerText = 'Подключен';
+                } else {
+                    button.classList.remove('connected');
+                    button.classList.add('disconnected');
+                    button.innerText = 'Не подключен';
+                }
+            }
+    
+            // Проверка подключения кошелька при загрузке страницы
+            window.onload = updateButtonColor;
+    
+            
+            
+        </script>
+
+    <div class="button-container">
+        <button id="callPrice">
+            Оновити ціну
+            
+        </button>
+        <div id="Price"></div>
+    </div>
+  
+
+    <div class="button-container">
+        <button id="calculate">
+            Розрахувати ціну
+            
+        </button>
+        <input type="number" id="inputField" placeholder="Введіть значення" />
+        <div id="howmuch"></div>
+    </div>
+    
+    <div class="button-container">
+        <button id="payForEnergy">
+            Оплатити
+            
+        </button>
+        
+        
+    </div>
+
+    <div class="button-container">
+        <button id="send">
+            Надіслати покази
+            
+        </button>
+        
+        
+    </div>
+    <div class="button-container">
+        <button id="debts">
+            Заборгованість
+            
+        </button>
+        <div id="debtsTx">Сума:  </div>
+        
+    </div>
+
+
+</body>
+
+</html>
